@@ -18,4 +18,4 @@
 
 - color intensity goes like yellow-50,100,200,300,....900
 
-### FLEXBOX
+### FLEXBOX 

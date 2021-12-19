@@ -5,7 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/tailwindcss" href="style.css">
     <title>Tailwind CSS</title>
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .applyhead{
+          @apply text-center font-extrabold text-xl text-red-400 m-10;
+    }
+      }
+    </style>
 </head>
 <body>
     <h1 class="bg-yellow-800 text-white m-3 text-center">Hello tailwind</h1>
@@ -110,6 +119,25 @@
       Press Button 1
     </button>
   </div>
+
+  <h1 class="mb-10 text-4xl text-center font-bold underline decoration-green-400 decoration-double hover:decoration-wavy">
+    Hello to the Typography part
+  </h1>
+
+  <h1 class="mb-10 text-2xl text-center font-extrabold underline decoration-red-400 decoration-double hover:decoration-wavy">
+    Hello to the Typography part
+  </h1>
+
+  <h1 class="mb-10 font-mono text-2xl text-center font-extrathin underline decoration-red-400 decoration-double hover:decoration-dotted">
+    Hello to the Typography part
+  </h1>
+
+
+  <div class="h-32 m-24 w-[200px] [background:black] hover:bg-[lightgreen] [border-width:5px] [border-color:pink]">
+    <h1 class="text-white text-center hover:text-[black]">Dynamic CSS</h1>
+  </div>
+
+  <h1 class="applyhead">USING APPLY DIRECTIVE</h1>
 
 </body>
 </html>
